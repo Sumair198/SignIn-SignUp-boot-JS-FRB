@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script> -->
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyDx0A8a6Vsp1en8xc31XIgKWQDIM6NZxo8",
+    authDomain: "task-auth-2b479.firebaseapp.com",
+    projectId: "task-auth-2b479",
+    storageBucket: "task-auth-2b479.appspot.com",
+    messagingSenderId: "343290711283",
+    appId: "1:343290711283:web:0037d88b58eed270e0bb86",
+    measurementId: "G-QTM2F5KVHT"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+    
+    <body class="main-bg">
+        <div class="login-container text-c animated flipInX">
+                <div>
+                    <h1 class="logo-badge text-whitesmoke"><span class="fa fa-user-circle"></span></h1>
+                </div>
+                    <h3 class="text-whitesmoke">SignUp</h3>
+                    <p class="text-whitesmoke">Sumair-ul-haq</p>
+                <div class="container-content">
+                    
+                        <div class="form-group">
+                            <input id="email" type="text" class="form-control" placeholder="Username" required="">
+                        </div>
+                        <div class="form-group">
+                            <input id="password" type="password" class="form-control" placeholder="*******" required="">
+                        </div>
+
+                        <!-- <input type="password" name="" id="password"> -->
+                        <button onclick="signup()" type="submit" class="form-button button-l margin-b">SignUp</button>
+        
+                        <a class="text-darkyellow" href="#"><small>Forgot your password?</small></a>
+                        <p class="text-whitesmoke text-center"><small>Do not have an account?</small></p>
+                        <a class="text-darkyellow" href="#"><small>Sign Up</small></a>
+                  
+                    <p class="margin-t text-whitesmoke"><small> Your Name &copy; 2018</small> </p>
+                </div>
+            </div>
+
+                
+            </body>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
